@@ -1,0 +1,7 @@
+@import "card.css";
+@import "home.css";
+@import "post.css";
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}

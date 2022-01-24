@@ -1,0 +1,68 @@
+#post {
+    display: grid;
+    grid-template-areas: "fig"
+                         "con"
+                         "ft";
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 5px;
+}
+
+figure {
+    grid-area: fig;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+
+#post-pic {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#post-content {
+    margin: auto;
+    grid-area: con;
+    display: flex;
+    flex-direction: column;
+}
+
+#in-post-link {
+    color: #60a7dc;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    color: #cc4a7c;
+}
+
+#home-link {
+    color: black;
+    font-size: 200%;
+}
+
+#home-link:hover {
+    color: #b84370;
+}
+
+#return-home {
+    text-align: center;
+}
+
+blockquote {
+    border-left: 7px solid #4a7ccc;
+    font-weight: bold;
+    color: #cc4a7c;
+}
+
+@media(max-width: 950px){
+    #post-content{
+        font-size: larger;
+    }
+}
